@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your results.</title>
+        <link rel = "stylesheet" href= "/staticFiles/standard.css" type = 'text/css'>
+    </head>
+    <body>
+        <ul>
+            <li><a href="/cityState">Change Location</a></li>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/allReviews">See & Change Reviews</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+        <div class="flashes">
+            {% for message in get_flashed_messages() %}
+              {{ message }}
+            {% endfor %}
+        </div>
+    </body>
+</html>
